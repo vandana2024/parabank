@@ -88,3 +88,10 @@ Copy printed function signatures from last step, and implement the selenium acti
 
 #Pom.xml
 all dependicies are from Maven reposistory- https://mvnrepository.com/
+
+#Reporting
+extent report 
+plugin installet cucumber-extentreport  and extentsreport and then config file created in target.
+for running add plugin in testrunner file.
+
+
