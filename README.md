@@ -88,30 +88,4 @@ The Data Table (even only 1 row) can help you to change the data input in the fu
 Copy printed function signatures from last step, and implement the selenium action you want to achieve.
 
 
-# Bamboo Plan Setup
-To create a continuous testing plan, please follow the below steps:
 
-1. Create Bamboo Plan
-2. Configure Plan: Repository (your repo)
-3. Configure Plan: Bamboo Variables 
-(if you want different testing domain for this plan (for your app testing environment)
-i.e. `siteUrl` = `http://www.google.com`
-
-To pass in testingbot / saucelabs api endpoint, 
-i.e. `saucelabs_endpoint` = `http://<secret from saucelabs>@ondemand.saucelabs.com:80/wd/hub`)
-
-4. Stages -> New Stage -> Add Task:
-- Source Code Checkout (from your repo configured)
-
-- To add `Chrome` Maven 3.x task:
-Goal:
-clean test -DbrowserName=googlechrome -DenvName=remote -DremoteWebDriver=${bamboo.saucelabs_endpoint} -DsiteUrl=${bamboo.siteUrl} -DappName="My Project"
-
-Working sub directory: If you have your cucumber in sub folder of your repo, then enter the subfolder name here
-
-5. Repeat Step 4 if you want to test against ie10 / ie9 / firefox / ipad / iphone.
-One task for one devices, which will run full set of the testing cases. Also you can disable a task from time to time.
-
-6. (Optional) Configure Plan: Triggers
-Add `Scheduled builds`, Trigger Type with `Scheduled` daily 
-Or you can set `Trigger the build when changes are committed` or polling the repo for changes. Whichever you best match your use case for continuous testing.
