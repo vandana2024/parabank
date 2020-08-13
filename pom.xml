@@ -27,7 +27,7 @@
 
                   <systemPropertyVariables>
                     <!-- Your Project Site Url -->
-                    <siteUrl>http://www.google.com</siteUrl>
+                    <siteUrl>https://parabank.parasoft.com/</siteUrl>
                     <!-- You can define more System.getProperty() here -->
                   </systemPropertyVariables>
 
@@ -37,28 +37,32 @@
     </build>
 
     <dependencies>
+        <!-- SureFire -->
+        <dependency>
+            <groupId>org.apache.maven.surefire</groupId>
+            <artifactId>surefire-junit47</artifactId>
+            <version>2.18</version>
+        </dependency>
         <!-- JUnit -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13</version>
+            <version>4.11</version>
             <scope>test</scope>
         </dependency>
         <!-- Cucumber -->
         <dependency>
-            <groupId>io.cucumber</groupId>
+            <groupId>info.cukes</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>5.7.0</version>
-        </dependency>
-
-        <!-- Cucumber junit -->
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>5.7.0</version>
+            <version>1.1.6</version>
             <scope>test</scope>
         </dependency>
-        <!-- Cucumber html-->
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>1.1.6</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-html</artifactId>
@@ -72,8 +76,6 @@
             <artifactId>selenium-java</artifactId>
             <version>2.45.0</version>
         </dependency>
-
-
     </dependencies>
 
 </project>

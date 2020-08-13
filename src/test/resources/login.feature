@@ -7,5 +7,5 @@ Feature: user should open Url and login with valid credential
     Then user should see "My Account"
     Examples:
       | username | password |
-      | User1| 1234 |
+      | User5 | 1234 |
 

@@ -28,12 +28,9 @@ public class loginStepDefinition {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
         loginPage login = new loginPage(driver);
-        login.setUserNameTextBox("user1");
+        login.setUserNameTextBox("vandy");
         login.setPasswordTextBox("1234");
-
-        //driver.findElement(By.cssSelector("input[name=username]")).sendKeys("username");
-        //driver.findElement(By.cssSelector("input[name=password]")).sendKeys("password");
-        //driver.findElement(By.cssSelector("input[type=submit]")).click();
+        driver.findElement(By.cssSelector("input[type=submit]")).click();
         //Assert.assertTrue(driver.findElement(By.cssSelector("#rightPanel p")).getText().contains("The username and password could not be verified."));
         //driver.quit();
         ;
