@@ -1,14 +1,12 @@
 package stepDefinition;
 
-
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import pageobject.loginPage;
+import pageObject.loginPage;
 
 import java.util.concurrent.TimeUnit;
 
@@ -27,7 +25,7 @@ public class homelinkStepDefinition {
         driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id=\"headerPanel\"]/ul[2]/li[1]")).click();
         loginPage login = new loginPage(driver);
-        login.setUserNameTextBox("user5");
+        login.setUserNameTextBox("username1");
         login.setPasswordTextBox("1234");
         driver.findElement(By.cssSelector("input[type=submit]")).click();
     }

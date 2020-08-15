@@ -5,7 +5,8 @@ import cucumber.api.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import pageobject.loginPage;
+import pageObject.loginPage;
+
 
 import java.util.concurrent.TimeUnit;
 
@@ -24,21 +25,28 @@ public class newAccountStepDefinition {
         driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id=\"leftPanel\"]/ul/li[1]/a")).click();
         loginPage login = new loginPage(driver);
-        login.setUserNameTextBox("Vandy");
+        login.setUserNameTextBox("vandy");
         login.setPasswordTextBox("1234");
         driver.findElement(By.cssSelector("input[type=submit]")).click();
     }
 
     @Given("^user enter the values$")
-    public void user_enter_the_values() throws Throwable {
+    public void user_enter_the_values(By by) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-          System.out.println("user enters value");
+
+          driver.findElement(By.xpath("//*[@id=\"leftPanel\"]/ul/li[1]/a")).click();
+          driver.findElement(By.xpath("//*[@type=\"submit\"]")).click();
+        System.out.println("user enters value");
     }
 
+
     @Then("^account should be created$")
-    public void account_should_be_created() throws Throwable {
+    public void account_should_be_created(By by) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         System.out.println("user should be created");
+
+        driver.findElement(By.xpath("//*[@id=\"newAccountId\"]")).click();
+
     }
 
 }

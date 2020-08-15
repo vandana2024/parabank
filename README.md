@@ -94,4 +94,6 @@ extent report
 plugin installet cucumber-extentreport  and extentsreport and then config file created in target.
 for running add plugin in testrunner file.
 
+#maven command
+In intellij see the maven ,click on the maven install and run
 
