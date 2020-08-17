@@ -6,5 +6,5 @@ Feature: Navigate to the Home screen and extract all the links to a notepad
     And user write ATM service in notepad
     And user write online service in notepad
     And  user write latest news in notepad
-    Then  User should be navigate to home page
+    Then  user should be navigate to home page
 

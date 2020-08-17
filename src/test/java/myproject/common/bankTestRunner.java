@@ -9,12 +9,12 @@ import org.junit.runner.RunWith;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources",
+@CucumberOptions(features = "src/test/resources/features",
         glue = {"stepDefinition"},
-        //plugin = {"pretty","junit:target/cucumber/report.xml"},
+        plugin = {"pretty","junit:target/cucumber/report.xml",
         // "json:target/cucumber/report.json”,
         //For extent report
-        //plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber/report.html"},
+        "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber/report.html"},
         monochrome = true
 )
 public class bankTestRunner {

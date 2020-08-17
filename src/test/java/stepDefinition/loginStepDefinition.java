@@ -29,7 +29,7 @@ public class loginStepDefinition {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
         loginPage login = new loginPage(driver);
-        login.setUserNameTextBox("vandy");
+        login.setUserNameTextBox("username1");
         login.setPasswordTextBox("1234");
         driver.findElement(By.cssSelector("input[type=submit]")).click();
         //Assert.assertTrue(driver.findElement(By.cssSelector("#rightPanel p")).getText().contains("The username and password could not be verified."));
@@ -52,5 +52,6 @@ public class loginStepDefinition {
         System.out.println("user should see the homepage");
 
     }
+
 
 }

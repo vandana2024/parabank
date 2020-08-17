@@ -92,8 +92,8 @@ all dependicies are from Maven reposistory- https://mvnrepository.com/
 #Reporting
 extent report 
 plugin installet cucumber-extentreport  and extentsreport and then config file created in target.
-for running add plugin in testrunner file.
+for running add plugin in testrunner file also define in utility files.
 
 #maven command
-In intellij see the maven ,click on the maven install and run
+In intellij see the maven ,click on the maven install and run the maven command
 

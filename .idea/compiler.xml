@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="paraBankAssignment" target="1.8" />
+      <module name="paraBankAssignment" target="10" />
     </bytecodeTargetLevel>
   </component>
 </project>

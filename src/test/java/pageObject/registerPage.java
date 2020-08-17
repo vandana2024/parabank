@@ -43,5 +43,7 @@ public class registerPage {
         lName.sendKeys(lastName);
     }
 
-
+    public By getAddress() {
+        return Address;
+    }
 }

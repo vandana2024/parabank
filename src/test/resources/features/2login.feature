@@ -1,4 +1,5 @@
-Feature: user should open Url and login with valid credential
+Feature: LoginFeature
+  user should open Url and login with valid credential
 
   @regression @smoke
   Scenario Outline: Verification of Login Function
@@ -8,4 +9,3 @@ Feature: user should open Url and login with valid credential
     Examples:
       | username | password |
       | username1 | 1234 |
-
