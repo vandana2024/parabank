@@ -27,7 +27,7 @@ public class registerStepDefinition {
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[1]/div/p[2]/a")).click();
         System.out.println("sag");
         Thread.sleep(3000);
-        driver.findElement(By.id("customer.firstName")).sendKeys("username7");
+        driver.findElement(By.id("customer.firstName")).sendKeys("username8");
         driver.findElement(By.id("customer.lastName")).sendKeys("user");
         driver.findElement(By.id("customer.address.street")).sendKeys("16288");
         driver.findElement(By.id("customer.address.city")).sendKeys("Tamp");

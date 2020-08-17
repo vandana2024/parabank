@@ -8,4 +8,4 @@ Feature: LoginFeature
     Then user should see "My Account"
     Examples:
       | username | password |
-      | username1 | 1234 |
+      | username7 | 1234 |

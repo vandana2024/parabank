@@ -25,7 +25,7 @@ public class homelinkStepDefinition {
         driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id=\"headerPanel\"]/ul[2]/li[1]")).click();
         loginPage login = new loginPage(driver);
-        login.setUserNameTextBox("username1");
+        login.setUserNameTextBox("username7");
         login.setPasswordTextBox("1234");
         driver.findElement(By.cssSelector("input[type=submit]")).click();
     }

@@ -25,7 +25,7 @@ public class newAccountStepDefinition {
         driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id=\"leftPanel\"]/ul/li[1]/a")).click();
         loginPage login = new loginPage(driver);
-        login.setUserNameTextBox("vandy");
+        login.setUserNameTextBox("username7");
         login.setPasswordTextBox("1234");
         driver.findElement(By.cssSelector("input[type=submit]")).click();
     }
