@@ -1,4 +1,4 @@
-package myproject.common;
+package bank.common;
 
 
 import cucumber.api.CucumberOptions;

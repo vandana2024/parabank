@@ -1,4 +1,4 @@
-package myproject.common;
+package bank.common;
 import base.extentReportUtil;
 import com.aventstack.extentreports.gherkin.model.Feature;
 import org.testng.ITestContext;
